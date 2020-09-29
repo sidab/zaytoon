@@ -1,0 +1,19 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Zaytoon",
+  "short_name": "Zaytoon",
+  "version": "ru.zaytoon",
+  "description": "Zaytoon",
+  "author": "Umakhan Magomedov",
+  "icons": [
+    {
+      "src": "www/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html",
+  "theme_color": "#FF8C00"
+}
