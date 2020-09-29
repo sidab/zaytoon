@@ -24,4 +24,6 @@
     <preference name="StatusBarTextColor" value="#FFFFFF" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
     <preference name="InterceptRemoteRequests" value="all" />
+    <preference name="WKWebViewOnly" value="true" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 </widget>

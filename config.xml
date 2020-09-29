@@ -20,6 +20,11 @@
     <preference name="StatusBarTextColor" value="#FFFFFF" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
     <preference name="InterceptRemoteRequests" value="all" />
+    <preference name="WKWebViewOnly" value="true" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
     <icon src="www/icon.png" />
     <content src="index.html" />
     <platform name="ios">

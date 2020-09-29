@@ -118,6 +118,8 @@ async function loadCss(callback) {
 
             let css = this.responseText;
 
+            css = css.replaceAll('../themes/delivery/assets//', '');
+
             localStorage.setItem('css', css);
 
             if (callback) {
