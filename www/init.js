@@ -2,30 +2,6 @@ document.addEventListener('deviceready', function () {
 
     initConfig();
 
-    setInterval(function () {
-
-        var localStorageSpace = function(){
-            var data = '';
-
-            console.log('Current local storage: ');
-
-            for(var key in window.localStorage){
-
-                if(window.localStorage.hasOwnProperty(key)){
-                    data += window.localStorage[key];
-                    console.log( key + " = " + ((window.localStorage[key].length * 16)/(8 * 1024)).toFixed(2) + ' KB' );
-                }
-
-            }
-
-            alert(data ? '\n' + 'Total space used: ' + ((data.length * 16)/(8 * 1024)).toFixed(2) + ' KB' : 'Empty (0 KB)');
-            alert(data ? 'Approx. space remaining: ' + (5120 - ((data.length * 16)/(8 * 1024)).toFixed(2)) + ' KB' : '5 MB');
-        };
-
-        localStorageSpace()
-
-    }, 10000);
-
 }, false);
 
 let jsLoadedEvent = new CustomEvent('jsLoaded', { "detail": "Example of an event" });
@@ -120,7 +96,13 @@ function initCss() {
 
         link.href = url;
 
+        let style = document.createElement('style');
+
+        style.appendChild(document.createTextNode(css));
+
         document.getElementsByTagName('head')[0].appendChild(link);
+
+        document.getElementsByTagName('head')[0].appendChild(style);
 
     }
 
