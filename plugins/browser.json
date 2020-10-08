@@ -28,12 +28,6 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-wkwebview-file-xhr": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     }

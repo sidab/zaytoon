@@ -79,6 +79,7 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
     </platform>
     <access origin="*" />
+    <allow-intent href="*" />
     <allow-navigation href="*" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-crosswalk-webview-arm" />

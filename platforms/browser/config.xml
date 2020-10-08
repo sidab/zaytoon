@@ -8,6 +8,7 @@
     <icon src="www/icon.png" />
     <content src="index.html" />
     <access origin="*" />
+    <allow-intent href="*" />
     <allow-navigation href="*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="false" />

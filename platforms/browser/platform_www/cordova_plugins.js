@@ -49,6 +49,14 @@ module.exports = [
         "clobbers": [
             "OneSignal"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+        "id": "cordova-plugin-ionic-webview.IonicWebView",
+        "pluginId": "cordova-plugin-ionic-webview",
+        "clobbers": [
+            "Ionic.WebView"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -61,9 +69,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "6.0.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-wkwebview-engine": "1.2.1",
-    "cordova-plugin-wkwebview-file-xhr": "3.0.0",
-    "onesignal-cordova-plugin": "2.11.1"
+    "onesignal-cordova-plugin": "2.11.1",
+    "cordova-plugin-ionic-webview": "5.0.0"
 }
 // BOTTOM OF METADATA
 });

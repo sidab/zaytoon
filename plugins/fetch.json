@@ -65,18 +65,10 @@
       "GEOLOCATION_USAGE_DESCRIPTION": "Нам необходим доступ к вашему местоположению для того чтобы вы могли указать свой адрес."
     }
   },
-  "cordova-plugin-wkwebview-engine": {
+  "cordova-plugin-ionic-webview": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-wkwebview-engine"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-wkwebview-file-xhr": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-wkwebview-file-xhr"
+      "id": "cordova-plugin-ionic-webview@5.0.0"
     },
     "is_top_level": true,
     "variables": {}
