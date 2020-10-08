@@ -86,13 +86,17 @@ function initCss() {
 
         let css = localStorage.getItem('css');
 
-        let style = document.createElement('style');
+        let blob = new Blob([css]);
 
-        style.type = 'text/css';
+        let url = URL.createObjectURL(blob);
 
-        document.getElementsByTagName('head')[0].appendChild(style);
+        let link = document.createElement('link');
 
-        style.innerHTML = css;
+        link.rel = 'stylesheet';
+
+        link.href = url;
+
+        document.getElementsByTagName('head')[0].appendChild(link);
 
     }
 
