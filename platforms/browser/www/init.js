@@ -6,17 +6,13 @@ document.addEventListener('deviceready', function () {
 
 let jsLoadedEvent = new CustomEvent('jsLoaded', { "detail": "Example of an event" });
 
-async function initJs() {
+function initJs() {
 
     let js = localStorage.getItem('js');
 
     if (js) {
 
-        (async function() {
-
-            eval(js);
-
-        })();
+        eval(js);
 
         loadJs();
 
@@ -26,11 +22,7 @@ async function initJs() {
 
             js = localStorage.getItem('js');
 
-            (async function() {
-
-                eval(js);
-
-            })();
+            eval(js);
 
         });
 
@@ -38,7 +30,7 @@ async function initJs() {
 
 }
 
-async function loadJs(callback) {
+function loadJs(callback) {
 
     let config = JSON.parse(localStorage.getItem('config'));
 
@@ -70,7 +62,7 @@ async function loadJs(callback) {
 
 }
 
-async function initCss() {
+function initCss() {
 
     let css = localStorage.getItem('css');
 
@@ -106,7 +98,7 @@ async function initCss() {
 
 }
 
-async function loadCss(callback) {
+function loadCss(callback) {
 
     let config = JSON.parse(localStorage.getItem('config'));
 
@@ -138,7 +130,7 @@ async function loadCss(callback) {
 
 }
 
-async function initConfig() {
+function initConfig() {
 
     if (localStorage.config) {
 
@@ -162,7 +154,7 @@ async function initConfig() {
 
 }
 
-async function loadConfig(callback) {
+function loadConfig(callback) {
 
     let xhttp = new XMLHttpRequest();
 
