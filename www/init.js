@@ -100,7 +100,7 @@ function initCss() {
 
         style.appendChild(document.createTextNode(css));
 
-        document.getElementsByTagName('head')[0].appendChild(link);
+        //document.getElementsByTagName('head')[0].appendChild(link);
 
         document.getElementsByTagName('head')[0].appendChild(style);
 
