@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93bf451b-591e-470f-80c9-2394c0218e61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/localforage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/PlatformScriptsWorkflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/hooks/after_build/000-build_64_bit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/hooks/after_plugin_install/000-shared_mode_special.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/hooks/before_build/000-build_64_bit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/hooks/before_plugin_uninstall/000-shared_mode_special.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/hooks/update_config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/armeabi-v7a/libxwalkcore.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/armeabi-v7a/libxwalkdummy.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaClientCertRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaCookieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaHttpAuthHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaResourceClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaUiClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkExposedJsApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkFileChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkWebViewEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/platforms/android/xwalk.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-crosswalk-webview-arm/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/browser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/PlatformScriptsWorkflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/hooks/after_build/000-build_64_bit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/hooks/after_plugin_install/000-shared_mode_special.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/hooks/before_build/000-build_64_bit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/hooks/before_plugin_uninstall/000-shared_mode_special.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/hooks/update_config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/armeabi-v7a/libxwalkcore.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/armeabi-v7a/libxwalkdummy.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaClientCertRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaCookieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaHttpAuthHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaResourceClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaUiClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkCordovaView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkExposedJsApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkFileChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/src/org/crosswalk/engine/XWalkWebViewEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/platforms/android/xwalk.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-crosswalk-webview-arm/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/fetch.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fetch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/init.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lcVusjjSUYl57IJBApOUL96IbL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Run PhoneGap" type="PhoneGap" factoryName="PhoneGap/Cordova" nameIsGenerated="true">
+      <option name="myExecutable" value="/usr/local/bin/phonegap" />
+      <option name="myWorkDir" value="$PROJECT_DIR$" />
+      <option name="myCommand" value="serve" />
+      <option name="myPassParent" value="true" />
+      <option name="myPlatform" value="browser" />
+      <option name="myExtraArgs" value="" />
+      <option name="hasTarget" value="false" />
+      <option name="target" value="" />
+      <method v="2">
+        <option name="PhonegapTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93bf451b-591e-470f-80c9-2394c0218e61" name="Default Changelist" comment="" />
+      <created>1607896592192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607896592192</updated>
+      <workItem from="1607896593589" duration="2185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="104" y="62" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607897379637">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1607897379637" />
+    <state width="1259" height="212" key="GridCell.Tab.0.bottom" timestamp="1607899561561">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607899561561" />
+    <state width="1259" height="212" key="GridCell.Tab.0.center" timestamp="1607899561559">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607899561559" />
+    <state width="1259" height="212" key="GridCell.Tab.0.left" timestamp="1607899561558">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607899561558" />
+    <state width="1259" height="212" key="GridCell.Tab.0.right" timestamp="1607899561560">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607899561560" />
+  </component>
+</project>

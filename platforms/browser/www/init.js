@@ -6,23 +6,69 @@ document.addEventListener('deviceready', function () {
 
 let jsLoadedEvent = new CustomEvent('jsLoaded', { "detail": "Example of an event" });
 
-function initJs() {
+let cssLoadedEvent = new CustomEvent('cssLoaded', { "detail": "Example of an event" });
 
-    let js = localStorage.getItem('js');
+let config = localStorage.config ? JSON.parse(localStorage.getItem('config')) : false;
 
-    if (js) {
+let cssLoaded = false;
 
-        eval(js);
+let jsLoaded = false;
 
-        loadJs();
+function initConfig() {
 
-    }  else {
+    if (localStorage.getItem('config')) {
 
-        loadJs(function () {
+        try {
 
-            js = localStorage.getItem('js');
+            initCss();
 
-            eval(js);
+            initJs();
+
+        } catch (error) {
+
+            console.log(error);
+
+            localStorage.removeItem('config');
+
+            initConfig();
+
+        }
+
+        loadConfig(function () {
+
+            loadCss();
+
+            loadJs();
+
+            document.addEventListener('cssLoaded', function(e) {
+
+                checkChanges();
+
+            });
+
+            document.addEventListener('jsLoaded', function(e) {
+
+                checkChanges();
+
+            });
+
+        });
+
+    } else {
+
+        loadConfig(function () {
+
+            loadCss(function () {
+
+                initCss();
+
+            });
+
+            loadJs(function () {
+
+                initJs();
+
+            });
 
         });
 
@@ -30,9 +76,23 @@ function initJs() {
 
 }
 
-function loadJs(callback) {
+function checkChanges() {
 
-    let config = JSON.parse(localStorage.getItem('config'));
+    if (cssLoaded && jsLoaded) {
+
+        let newConfig = JSON.parse(localStorage.getItem('config'));
+
+        if ((config.css !== newConfig.css) || (config.js !== newConfig.js)) {
+
+            location.reload();
+
+        }
+
+    }
+
+}
+
+function loadConfig(callback) {
 
     let xhttp = new XMLHttpRequest();
 
@@ -40,11 +100,9 @@ function loadJs(callback) {
 
         if (this.readyState == 4 && this.status == 200) {
 
-            let js = this.responseText;
+            let newConfig = this.responseText;
 
-            localStorage.setItem('js', js);
-
-            document.dispatchEvent(jsLoadedEvent);
+            localStorage.setItem('config', newConfig);
 
             if (callback) {
 
@@ -56,7 +114,7 @@ function loadJs(callback) {
 
     };
 
-    xhttp.open('GET', config.js, true);
+    xhttp.open('GET', 'https://zaytoon.ru/api/config', true);
 
     xhttp.send();
 
@@ -64,45 +122,29 @@ function loadJs(callback) {
 
 function initCss() {
 
-    let css = localStorage.getItem('css');
+    addStyles();
 
-    if (css) {
+}
 
-        addStyles();
+function addStyles() {
 
-        loadCss();
+    try {
 
-    }  else {
+        localforage.getItem('css').then(function (css) {
 
-        loadCss(function () {
+            let style = document.createElement('style');
 
-            addStyles()
+            style.appendChild(document.createTextNode(css));
+
+            document.getElementsByTagName('head')[0].appendChild(style);
 
         });
 
-    }
+    } catch (error) {
 
-    function addStyles() {
+        alert('Произошла ошибка, пожалуйста попробуйте перезапустить приложение.');
 
-        let css = localStorage.getItem('css');
-
-        let blob = new Blob([css]);
-
-        let url = URL.createObjectURL(blob);
-
-        let link = document.createElement('link');
-
-        link.rel = 'stylesheet';
-
-        link.href = url;
-
-        let style = document.createElement('style');
-
-        style.appendChild(document.createTextNode(css));
-
-        //document.getElementsByTagName('head')[0].appendChild(link);
-
-        document.getElementsByTagName('head')[0].appendChild(style);
+        console.log(error);
 
     }
 
@@ -120,15 +162,29 @@ function loadCss(callback) {
 
             let css = this.responseText;
 
-            css = css.replaceAll('../themes/delivery/assets//', '');
+            try {
 
-            localStorage.setItem('css', css);
+                css = css.replaceAll('../themes/delivery/assets/app//', '');
 
-            if (callback) {
+            } catch (error) {
 
-                callback();
+                css = css.replace(/..\/themes\/delivery\/assets\/app\/\//g, '');
 
             }
+
+            localforage.setItem('css', css).then(function () {
+
+                cssLoaded = true;
+
+                document.dispatchEvent(cssLoadedEvent);
+
+                if (callback) {
+
+                    callback();
+
+                }
+
+            });
 
         }
 
@@ -140,31 +196,33 @@ function loadCss(callback) {
 
 }
 
-function initConfig() {
+function initJs() {
 
-    if (localStorage.config) {
+    localforage.getItem('js').then(function (js) {
 
-        initCss();
+        try {
 
-        initJs();
+            eval(js);
 
-        loadConfig();
+        } catch (error) {
 
-    } else {
+            console.log(error);
 
-        loadConfig(function () {
+            setTimeout(function() {
 
-            initCss();
+                alert('Произошла ошибка, пожалуйста попробуйте перезапустить приложение.');
 
-            initJs();
+            }, 1);
 
-        });
+        }
 
-    }
+    });
 
 }
 
-function loadConfig(callback) {
+function loadJs(callback) {
+
+    let config = JSON.parse(localStorage.getItem('config'));
 
     let xhttp = new XMLHttpRequest();
 
@@ -172,51 +230,27 @@ function loadConfig(callback) {
 
         if (this.readyState == 4 && this.status == 200) {
 
-            let config = this.responseText;
+            let js = this.responseText;
 
-            let oldConfig;
+            localforage.setItem('js', js).then(function () {
 
-            if (!callback) {
+                jsLoaded = true;
 
-                oldConfig = JSON.parse(localStorage.getItem('config'));
+                document.dispatchEvent(jsLoadedEvent);
 
-            }
+                if (callback) {
 
-            localStorage.setItem('config', config);
-
-            if (callback) {
-
-                callback();
-
-            } else {
-
-                try {
-
-                    document.addEventListener('jsLoaded', function(e) {
-
-                        let newConfig = JSON.parse(config);
-
-                        if ((oldConfig.css !== newConfig.css) || (oldConfig.js !== newConfig.js)) {
-
-                            location.reload();
-
-                        }
-
-                    });
-
-                } catch (error) {
-
-                    console.log(error);
+                    callback();
 
                 }
 
-            }
+            });
 
         }
 
     };
 
-    xhttp.open('GET', 'https://zaytoon.ru/api/config', true);
+    xhttp.open('GET', config.js, true);
 
     xhttp.send();
 
